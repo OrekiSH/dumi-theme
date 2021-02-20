@@ -1,0 +1,57 @@
+@import (reference) '../style/variables.less';
+
+.@{prefix}-alert {
+  position: relative;
+  margin: 24px 0;
+  padding: 10px 1.5rem;
+  color: @c-text;
+  font-size: 14px;
+  line-height: 20px;
+  border-left: 0;
+  background: #fff;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0.5rem;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:not([type]),
+  &[type='warning'] {
+    background-color: rgba(255,229,100,.3);
+    color: darken(#ffe564, 70%);
+    &::after {
+      background: darken(#ffe564, 35%);
+    }
+  }
+
+  &[type='info'] {
+    background-color: #f3f5f7;
+    &::after {
+      background: #42b983;
+    }
+  }
+
+  &[type='success'] {
+    background-color: #f3f5f7;
+    &::after {
+      background: #42b983;
+    }
+  }
+
+  &[type='error'] {
+    background-color: #ffe6e6;
+    color: darken(red, 70%);
+    &::after {
+      background: darken(red, 20%);
+    }
+  }
+}

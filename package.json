@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "lerna": "^3.22.1"
+  },
+  "dependencies": {
+    "prism-react-renderer": "^1.1.1",
+    "prismjs": "^1.23.0",
+    "rc-tabs": "^11.7.3"
+  },
+  "scripts": {
+    "lint": "eslint --ext .tsx .",
+    "lintfix": "eslint --fix --ext .tsx ."
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

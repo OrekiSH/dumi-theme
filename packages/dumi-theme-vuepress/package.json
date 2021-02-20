@@ -1,0 +1,33 @@
+{
+  "name": "@dumi-theme/dumi-theme-vuepress",
+  "version": "0.1.0",
+  "description": "📖 A VuePress style theme for dumi.",
+  "keywords": [
+    "react",
+    "dumi",
+    "theme",
+    "documentation",
+    "vuepress"
+  ],
+  "files": [
+    "es",
+    "src"
+  ],
+  "sideEffects": [
+    "./**/*.less"
+  ],
+  "author": "OrekiSH <orekish@163.com>",
+  "homepage": "https://github.com/OrekiSH/dumi-theme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrekiSH/dumi-theme.git",
+    "directory": "packages/dumi-theme-vuepress"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/OrekiSH/dumi-theme/issues"
+  }
+}
