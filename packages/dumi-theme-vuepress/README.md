@@ -1,6 +1,24 @@
-<h1 align="center">[WIP]dumi-theme-vuepress</h1>
+<h1 align="center">dumi-theme</h1>
 
 📖 A VuePress style theme for dumi.
+
+English | <a href="https://github.com/OrekiSH/dumi-theme/blob/main/packages/dumi-theme-vuepress/README-zh_CN.md">简体中文</a>
+
+## Install
+
+* First of all, install [dumi v1.x](https://github.com/umijs/dumi)
+
+* Then install the theme
+
+```bash
+$ npm i -D @dumi-theme/dumi-theme-vuepress
+# OR
+$ yarn add -D @dumi-theme/dumi-theme-vuepress
+```
+
+## Usage
+
+* That's all, dumi will resolve the theme automatically.
 
 ## Preview
 

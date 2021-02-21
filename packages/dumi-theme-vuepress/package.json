@@ -10,7 +10,6 @@
     "vuepress"
   ],
   "files": [
-    "es",
     "src"
   ],
   "sideEffects": [

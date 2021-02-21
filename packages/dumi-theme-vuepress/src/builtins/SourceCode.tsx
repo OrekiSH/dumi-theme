@@ -11,7 +11,7 @@ export interface ICodeBlockProps {
   showCopy?: boolean;
 }
 
-export default ({ code, lang, showCopy = true }: ICodeBlockProps) => {
+const SourceCode = ({ code, lang, showCopy = true }: ICodeBlockProps) => {
   const [copyCode, copyStatus] = useCopy();
 
   return (
@@ -26,7 +26,7 @@ export default ({ code, lang, showCopy = true }: ICodeBlockProps) => {
                 onClick={() => copyCode(code)}
               />
             )}
-            {tokens.map((line, i) => (
+            {tokens.map((line, i: number) => (
               <div {...getLineProps({ line, key: i })}>
                 {line.map((token, key) => (
                   <span {...getTokenProps({ token, key })} />
@@ -39,3 +39,5 @@ export default ({ code, lang, showCopy = true }: ICodeBlockProps) => {
     </div>
   );
 };
+
+export default SourceCode;

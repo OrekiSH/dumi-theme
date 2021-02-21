@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './Example.less';
 
-export default (props: { route: any }) => {
+const Example = (props: { route: any }) => {
   const elm = useRef<HTMLIFrameElement>();
   const [height, setHeight] = useState(0);
 
@@ -32,3 +32,5 @@ export default (props: { route: any }) => {
     )
   );
 };
+
+export default Example;
